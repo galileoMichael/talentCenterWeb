@@ -1,0 +1,66 @@
+.main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .content {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 16px;
+  }
+  
+  .talent-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 375px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .main-content {
+      width: 100%;
+      padding: 8px;
+    }
+  
+    .talent-list {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+  }
+  

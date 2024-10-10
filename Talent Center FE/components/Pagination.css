@@ -1,0 +1,19 @@
+.pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.entries-selector {
+    display: flex;
+    align-items: center;
+}
+
+.entries-selector .MuiFormControl-root {
+    margin-right: 20px;
+}
+
+.pagination {
+    display: flex;
+}
